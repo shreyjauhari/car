@@ -1,0 +1,49 @@
+OLX Car Cover Scraper
+A Python script that scrapes car cover listings from OLX India and saves them to a CSV file.
+Features
+
+Searches for "car cover" products on OLX India (www.olx.in/items/q-car-cover)
+Extracts key information: title, price, location, date posted, and URL
+Saves results to a CSV file in the olx_results directory
+Handles errors gracefully and includes random delays to avoid rate limiting
+
+Requirements
+
+Python 3.6 or higher
+Required packages:
+
+requests
+beautifulsoup4
+csv (standard library)
+datetime (standard library)
+time (standard library)
+random (standard library)
+os (standard library)
+
+
+
+Installation
+
+Clone this repository:
+
+git clone https://github.com/yourusername/olx-car-cover-scraper.git
+cd olx-car-cover-scraper
+
+Install the required packages:
+
+pip install -r requirements.txt
+Usage
+Run the script with Python:
+python olx_scraper.py
+The script will:
+
+Create an olx_results directory if it doesn't exist
+Scrape up to 3 pages of car cover listings from OLX India
+Save the results to a timestamped CSV file in the olx_results directory
+
+Disclaimer
+This scraper is for educational purposes only. Using web scrapers may be against the terms of service of some websites. Please use responsibly and respect the website's robots.txt file and rate limits.
+License
+MIT License
+Author
+Created on May 10, 2025
